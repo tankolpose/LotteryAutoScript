@@ -98,22 +98,7 @@ jobs:
         run: |
           npm install
           npm run check
-  lottery_6:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Checkout codes'
-        uses: actions/checkout@v2
-      - name: 'Use Node.js'
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.15.5'
-      - name: 'Run in Nodejs'
-        shell: bash
-        env:
-          NUMBER: 6
-          COOKIE: ${{ secrets.COOKIE6 }}
-        run: |
-          npm installlottery_5:
+  lottery_5:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout codes'
@@ -130,3 +115,4 @@ jobs:
         run: |
           npm install
           npm run check
+          
